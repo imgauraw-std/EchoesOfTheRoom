@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Echoes of the Room</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>ECHOES OF THE ROOM</h1>
+    <div id="hud">
+      <span>Level <b id="hLevel">1</b></span>
+      <span>Moves <b id="hMoves">0</b></span>
+      <span>Time <b id="hTime">0.0</b>s</span>
+      <span>Echoes <b id="hEcho">∞</b></span>
+      <span>Key <b id="hKey">✗</b></span>
+    </div>
+    <div id="stage">
+      <canvas id="c" width="520" height="360"></canvas>
+      <div id="toast"></div>
+      <div id="ov">
+        <h2 id="ovT"></h2>
+        <p id="ovP"></p>
+        <button id="ovB">Start</button>
+      </div>
+    </div>
+    <div id="bar">
+      <button id="echoBtn">Echo (Space)</button>
+      <button id="restartBtn">Restart (R)</button>
+    </div>
+    <p class="hint">
+      Arrows / WASD to move · Space to send an echo · R to restart
+    </p>
+    <script src="game.js"></script>
+  </body>
+</html>
